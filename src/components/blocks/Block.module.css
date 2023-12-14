@@ -1,0 +1,8 @@
+.block{
+    border: solid white;
+    border-radius: 5px;
+    font-style: italic;
+    margin: 5px;
+    width: 100%;
+    padding: 5px 20px;
+}

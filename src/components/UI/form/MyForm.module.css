@@ -1,0 +1,22 @@
+.myForm{
+    text-align: center;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+
+}
+.myForm > input{
+    font-size: 14px;
+    box-sizing: border-box;
+    width: 420px;
+    margin-top: 10px;
+}
+.btns button{
+    margin: 0 20px;
+    width: 40%;
+    font-size: 17px;
+}
+.myForm > p{
+    margin-top: 5px;
+    font-size: 12px;
+}

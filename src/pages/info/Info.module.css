@@ -1,0 +1,10 @@
+.info{
+
+}
+.blocks{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}

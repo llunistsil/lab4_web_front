@@ -1,31 +1,22 @@
 import {createBrowserRouter} from "react-router-dom";
-import Login from "../pages/Login";
 import React from "react";
-import CreateUser from "../pages/CreateUser";
 import Main from "../pages/Main";
 import Error from "../pages/Error";
+import Info from "../pages/info/Info";
 
 export const publicRouter = createBrowserRouter([
     {
         path: "/",
-        element: <Login/>,
+        element: <Info/>,
         errorElement:<Error/>
-    },
-    {
-        path: "/create_user",
-        element: <CreateUser/>,
     },
 
 ]);
 export const privateRouter = createBrowserRouter([
     {
         path: "/",
-        element: <Login/>,
+        element: <Info/>,
         errorElement:<Error/>
-    },
-    {
-        path: "/create_user",
-        element: <CreateUser/>,
     },
     {
         path: "/main",

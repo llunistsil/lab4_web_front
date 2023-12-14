@@ -1,8 +1,7 @@
 import React from 'react';
-import '../styles/ITMO-logo.css'
-const ItmoLogo = () => {
+const ItmoLogo = (props) => {
     return (
-        <div className="itmoLogo">
+        <div {...props}>
             <a href="https://se.ifmo.ru/" target="_blank" rel="noreferrer">
                 <img src="/itmo-logo-dark.svg" alt="log"/>
             </a>
