@@ -5,6 +5,7 @@ const Main = () => {
     return (
         <div>
             <Header/>
+            Main
         </div>
     );
 };

@@ -3,14 +3,8 @@ import Header from "../../components/header/Header";
 import Block from "../../components/blocks/Block";
 import classes from "./Info.module.css";
 import MyLink from "../../components/UI/link/MyLink";
-import {useDispatch} from "react-redux";
-import openModal from "../../store/actionCreators/openModal";
 
 const Info = () => {
-    const dispatch = useDispatch()
-    const toModal = (open) =>{
-        dispatch(openModal(open))
-    }
     return (
         <div className={classes.info}>
             <Header/>
@@ -60,7 +54,7 @@ const Info = () => {
                     <br/>
                     Прежде чем начать использовать возможности приложения необходимо зарегестрироваться
                     или войти в свой аккаунт.(Незарегестрироанные пользователи не имеют доступ к приложению)<br/>
-                    Зарегестрироваться можно нажав <MyLink onClick={()=> toModal(true)} ><b>сюда</b></MyLink> или в правый верхний угол на иконку.<br/>
+                    Зарегестрироваться можно нажав <MyLink to="/sign" ><b>сюда</b></MyLink> или в правый верхний угол на иконку.<br/>
                     <br/>
                     Далее перед вами будет график и поля ввода координат.
                     Есть несколько способов проверить попадет ли точка в заданную область и сохранить результат:<br/>
@@ -83,7 +77,6 @@ const Info = () => {
 
                 </Block>
             </div>
-
         </div>
     );
 };

@@ -1,8 +1,9 @@
-import React from 'react';
 import {RouterProvider} from "react-router-dom";
 import {privateRouter, publicRouter} from "../router";
+
 const AppRouter = () => {
-    const isAuth = false;
+    const isAuth = false;//TODO Доделать авторизацию
+    // (не использовать Redux,потому что при обновлении страницы он возвращается в дефолтное состояние)
     return (
         isAuth
         ?
