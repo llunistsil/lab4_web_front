@@ -1,38 +1,37 @@
 import {createBrowserRouter} from "react-router-dom";
 import React from "react";
-import Main from "../pages/Main";
+import Main from "../pages/main/Main";
 import Error from "../pages/Error";
 import Info from "../pages/info/Info";
-import LoginForm from "../components/UI/form/LoginForm";
-import SignForm from "../components/UI/form/SignForm";
+import LoginForm from "../components/UI/form/auth/LoginForm";
+import SignForm from "../components/UI/form/auth/SignForm";
+import OptionForm from "../components/UI/form/auth/OptionForm";
 
-export const publicRouter = createBrowserRouter([
+export const router = createBrowserRouter([
     {
-        path: "/",
+        path: "~s368679/",
         element: <Info/>,
         errorElement:<Error/>,
         children:[
             {
-                path:"login",
-                element: <LoginForm/>
+                path: "login",
+                element: <LoginForm/>,
             },
             {
-                path:"sign",
-                element:<SignForm/>
-            }
+                path: "sign",
+                element: <SignForm/>
+            },
         ]
-    }
-
-]);
-export const privateRouter = createBrowserRouter([
-    {
-        path: "/",
-        element: <Info/>,
-        errorElement:<Error/>
     },
     {
-        path: "/main",
+        path: "~s368679/main",
         element: <Main/>,
+        errorElement:<Error/>,
+        children:[
+            {
+                path: "option",
+                element: <OptionForm/>
+            },
+        ]
     },
-
 ]);

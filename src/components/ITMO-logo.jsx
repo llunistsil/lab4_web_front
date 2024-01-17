@@ -3,7 +3,7 @@ const ItmoLogo = (props) => {
     return (
         <div {...props}>
             <a href="https://se.ifmo.ru/" target="_blank" rel="noreferrer">
-                <img src="/itmo-logo-dark.svg" alt="log"/>
+                <img src="/~s368679/itmo-logo-dark.svg" alt="log"/>
             </a>
         </div>
     );

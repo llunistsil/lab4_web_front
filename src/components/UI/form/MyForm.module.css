@@ -3,7 +3,6 @@
     font-size: 30px;
     display: flex;
     flex-direction: column;
-
 }
 .myForm > input{
     font-size: 14px;
@@ -11,12 +10,29 @@
     width: 420px;
     margin-top: 10px;
 }
-.btns button{
-    margin: 0 20px;
+.btns{
+    margin:20px;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.btns  > button{
     width: 40%;
     font-size: 17px;
 }
 .myForm > p{
     margin-top: 5px;
     font-size: 12px;
+}
+.myForm > a{
+    text-align: left;
+    margin-top: 5px;
+    font-size: 17px;
+}
+.myForm > div{
+    font-size: 17px;
+    box-sizing: border-box;
+    width: 420px;
+    margin-top: 10px;
 }

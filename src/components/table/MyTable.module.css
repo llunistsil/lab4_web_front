@@ -1,0 +1,21 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.table {
+    width: 60%;
+    border: 2px solid white;
+    margin: 30px;
+}
+.head {
+    color: black;
+    background-color: white;
+}
+.boby {
+    color: #111111;
+    background-color: #B7B7B7;
+    justify-content: center;
+    text-align: center;
+}
